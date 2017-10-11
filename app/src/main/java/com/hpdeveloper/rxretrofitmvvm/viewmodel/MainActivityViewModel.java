@@ -1,7 +1,5 @@
 package com.hpdeveloper.rxretrofitmvvm.viewmodel;
 
-import android.util.Log;
-
 import com.hpdeveloper.rxretrofitmvvm.api.GetAndroidOS;
 import com.hpdeveloper.rxretrofitmvvm.model.AndroidOS;
 import com.hpdeveloper.rxretrofitmvvm.view.MainActivityView;
@@ -37,11 +35,7 @@ public class MainActivityViewModel extends BaseViewModel<MainActivityView> {
 
             @Override
             public void onNext(ArrayList<AndroidOS> value) {
-                for (AndroidOS androidOS : value) {
-                    Log.i(TAG, androidOS.getName());
-
-                    view.onDataLoad(value);
-                }
+                view.onDataLoad(value);
             }
 
             @Override
