@@ -16,6 +16,7 @@ public class AndroidOSAdapter extends RecyclerView.Adapter<AndroidOSAdapter.View
 
     private ArrayList<AndroidOS> mAndroidList = new ArrayList<>();
 
+
     public void updateData(ArrayList<AndroidOS> androidList) {
         mAndroidList = androidList;
         notifyDataSetChanged();
