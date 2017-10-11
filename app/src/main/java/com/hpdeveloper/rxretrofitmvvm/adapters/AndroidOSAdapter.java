@@ -40,7 +40,7 @@ public class AndroidOSAdapter extends RecyclerView.Adapter<AndroidOSAdapter.View
     static class ViewHolder extends RecyclerView.ViewHolder {
         private ViewDataBinding binding;
 
-        public ViewHolder(View view) {
+        private ViewHolder(View view) {
             super(view);
             binding = DataBindingUtil.bind(view);
         }
@@ -50,6 +50,4 @@ public class AndroidOSAdapter extends RecyclerView.Adapter<AndroidOSAdapter.View
 
         }
     }
-
-
 }
